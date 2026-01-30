@@ -175,7 +175,7 @@ Invoke-WebRequest -UseBasicParsing `
 
 &"./install-pyenv-win.ps1"
 
-Validação:
+Validação da instalação:
 pyenv --version
 
 
@@ -185,7 +185,7 @@ pyenv install 3.12.10
 - Definição da versão do Python no projeto
 pyenv local 3.12.10
 
-Validação:
+Validação da instalação:
 python --version
 
 
@@ -195,7 +195,7 @@ py -m pip install --user pipx
 - Configuração do PATH para o pipx
 py -m pipx ensurepath
 
-Validação da instalação
+Validação da instalação:
 pipx --version
 
 
@@ -205,7 +205,7 @@ pipx install poetry
 - Instalação da extensão para habilitar o shell do Poetry
 poetry self add poetry-plugin-shell
 
-Validação:
+Validação da instalação:
 poetry --version
 
 
