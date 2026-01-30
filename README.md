@@ -167,7 +167,8 @@ O pipx é uma ferramenta projetada para instalar aplicações Python de linha de
 Esta seção documenta, em ordem cronológica, os comandos utilizados para configurar o ambiente de desenvolvimento do projeto.
 Todos os comandos devem ser executados no Terminal (Windows) como administrador, ou em outro Shell no Linux.
 
-- Instalação do pyenv-win 
+- Instalação do pyenv-win
+
 Invoke-WebRequest -UseBasicParsing `
   -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" `
   -OutFile "./install-pyenv-win.ps1"
