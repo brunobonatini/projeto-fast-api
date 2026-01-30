@@ -167,7 +167,7 @@ O pipx é uma ferramenta projetada para instalar aplicações Python de linha de
 Esta seção documenta, em ordem cronológica, os comandos utilizados para configurar o ambiente de desenvolvimento do projeto.
 Todos os comandos devem ser executados no Terminal (Windows) como administrador, ou em outro Shell no Linux.
 
-- Instalação do pyenv-win
+- Instalação do pyenv-win:
 
 Invoke-WebRequest -UseBasicParsing `
   -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" `
@@ -175,48 +175,63 @@ Invoke-WebRequest -UseBasicParsing `
 
 &"./install-pyenv-win.ps1"
 
+
 Validação da instalação:
+
 pyenv --version
 
 
-- Instalação da versão do Python do projeto
+- Instalação da versão do Python do projeto:
+
 pyenv install 3.12.10
 
-- Definição da versão do Python no projeto
+- Definição da versão do Python no projeto:
+
 pyenv local 3.12.10
 
 Validação da instalação:
+
 python --version
 
 
-- Instalação do pipx (gerenciamento de ferramentas globais)
+- Instalação do pipx (gerenciamento de ferramentas globais):
+
 py -m pip install --user pipx
 
-- Configuração do PATH para o pipx
+- Configuração do PATH para o pipx:
+
 py -m pipx ensurepath
 
 Validação da instalação:
+
 pipx --version
 
 
-- Instalação do Poetry via pipx
+- Instalação do Poetry via pipx:
+
 pipx install poetry
 
-- Instalação da extensão para habilitar o shell do Poetry
+- Instalação da extensão para habilitar o shell do Poetry:
+
 poetry self add poetry-plugin-shell
 
 Validação da instalação:
+
 poetry --version
 
 
-- Criação do projeto com Poetry
+- Criação do projeto com Poetry:
+
 poetry new nome-do-projeto
 
-- Acesso ao diretório do projeto
+- Acesso ao diretório do projeto:
+
 cd nome-do-pojeto
 
-- Criando o ambiente virtual
+- Criando o ambiente virtual:
+
 poetry install 
 
-- Instalando o FastAPI
+- Instalando o FastAPI:
+
 poetry add fastapi
